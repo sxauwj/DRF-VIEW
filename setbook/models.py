@@ -11,6 +11,7 @@ class BookInfo(models.Model):
     bread = models.IntegerField(default=0)
     bcomment = models.IntegerField(default=0)
     is_delete = models.BooleanField(default=False)
+
     #  新增属性，上传图片使用
     image = models.ImageField(upload_to='bookset',verbose_name='图片',null=True)
     class Meta:
